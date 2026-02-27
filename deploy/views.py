@@ -2,6 +2,8 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 from .models import Student
 from rest_framework.permissions import AllowAny
 from rest_framework.pagination import PageNumberPagination
+from .serializers import StudentSerializer
+
 
 class CustomPaginator(PageNumberPagination):
     page_size = 20

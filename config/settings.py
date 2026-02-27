@@ -34,9 +34,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'deploy',
+
+    "deploy",
+    "corsheaders",
     'rest_framework',
-    'corsheaders',
+    
+
+
 ]
 
 MIDDLEWARE = [
@@ -117,6 +121,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+
+MEDIA_URL = 'media/'
+MEDIA_HOOT = 'media/'
 # This is a list of additional directories where Django will look for static files 
 # during development (and for collectstatic to copy from).
 if DEBUG:
