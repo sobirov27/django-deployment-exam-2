@@ -11,12 +11,12 @@ class CustomPaginator(PageNumberPagination):
 
 class StudentListCreateApiVIew(ListCreateAPIView):
     queryset = Student.objects.all()
-    serializer_class = None
+    serializer_class = StudentSerializer
     permission_classes = [AllowAny]
     pagination_class = CustomPaginator
 
 
 class StudentDetailApiView(RetrieveUpdateDestroyAPIView):
     queryset = Student.objects.all()
-    serializer_class = None
+    serializer_class = StudentSerializer
     permission_classes = [AllowAny]
